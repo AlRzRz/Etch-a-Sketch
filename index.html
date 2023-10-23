@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="es.css">
+    <script src="es.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="headerContainer">
+        <div class="headerText glowhover upperText">WELCOME</div>
+        <div class="headerText glowhover upperText">TO</div>
+        <div class="headerText"><span class="etch glowhover">ETCH</span>-<span class="aword glowhover">A</span>-<span class="sketch glowhover">SKETCH</span>!</div>
+    </div>
+
+    <div class="mainContainer">
+        <div class="leftColumnMain">
+            <div class="colorContainer">
+                <div class="colorText">Color Picker</div>
+                <input type="color" class="colorPicker" id="colorPick">
+            </div>
+            <button class="rgbmode">RGB MODE</button>
+            <button class="eraser">Eraser</button>
+            <button class="reset">Reset</button>
+            <div class="sliderContainer">
+                <input type="range" min="2" max="100" value="16" class="squareslider">
+                <div class="sliderText">test</div>
+            </div>
+        </div>
+        <div class="middleColumnMain">
+            <div class="drawingArea"></div>
+        </div>
+        <div class="rightColumnMain"></div>
+    </div>
+</body>
+</html>

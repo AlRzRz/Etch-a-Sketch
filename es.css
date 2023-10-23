@@ -1,0 +1,250 @@
+/* font-family: 'Russo One', sans-serif; */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(212, 212, 212);
+}
+
+/*HEADER START*/
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 165px;
+    border-style: solid;
+    background-color: lightcoral;
+    gap: 8px;
+}
+
+.headerText {
+    font-family: 'Russo One', sans-serif;
+    font-size: 40px;
+    color: whitesmoke;
+    -webkit-text-stroke: 1.5px black;
+}
+    
+.etch {
+    color: blue;
+    -webkit-text-stroke: 1.5px black;
+}
+
+.aword {
+    color: orange;
+    -webkit-text-stroke: 1.5px black;
+}
+
+.sketch {
+    color: purple;
+    -webkit-text-stroke: 1.5px black;
+}
+
+.glowhover:hover {
+    color: greenyellow;
+    text-shadow: 0 0 10px greenyellow;
+}
+
+/* HEADER END */
+/* MAINCONTAINER START */
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(212, 212, 212);
+    margin-top: 10px;
+
+}
+
+
+
+.leftColumnMain, .middleColumnMain, .rightColumnMain {
+    flex: 1;
+    height: 600px;
+}
+
+.leftColumnMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.drawingArea {
+    width: 960px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 10px 2px darkgrey;
+    border-radius: 24px;
+
+}
+
+
+.mainrow {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+
+.subcolumn {
+    flex: 1;
+}
+
+.drawingblock {
+    -webkit-user-drag: none;  
+    -khtml-user-drag: none;    
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+/* LEFTSIDE BUTTONS */
+
+.colorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.colorText {
+    font-size: 20px;
+    font-family: 'Russo One', sans-serif;
+    font-weight: lighter;
+    color: black;
+    -webkit-text-stroke: 0.5px rgb(59, 59, 59);
+
+}
+
+.colorPicker {
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+}
+
+.colorPicker::-webkit-color-swatch {
+    border-radius: 40px;
+}
+
+
+.rgbmode {
+    border-radius: 12px;
+    height: 60px;
+    width: 150px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+    background-image: linear-gradient(blue, purple, orange);
+    -webkit-text-stroke: 0.2px black;
+    border: none;
+    margin-top: 25px;
+}
+
+.eraser {
+    border-radius: 12px;
+    height: 60px;
+    width: 150px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: cyan;
+    box-shadow: 0 0 4px 2px cyan;
+    -webkit-text-stroke: 0.2px black;
+    border: none;
+}
+
+.reset {
+    border-radius: 12px;
+    height: 60px;
+    width: 150px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: red;
+    box-shadow: 0 0 4px 2px red;
+    -webkit-text-stroke: 0.2px black;
+    border: none;
+}
+
+.rgbmode:hover {
+    height: 70px;
+    width: 160px;
+    transition: 0.1s ease-in-out;
+}
+
+.eraser:hover {
+    height: 70px;
+    width: 160px;
+    transition: 0.1s ease-in-out;
+}
+
+.reset:hover {
+    height: 70px;
+    width: 160px;
+    transition: 0.1s ease-in-out;
+}
+
+/* BUTTONS END */
+
+
+.sliderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 15px;
+}
+
+
+.sliderText {
+    font-family: 'Russo One', sans-serif;
+    font-weight: 50;
+}
+
+.squareslider {
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    width: 9rem;
+    cursor: pointer;    
+}
+
+.squareslider::-webkit-slider-runnable-track {
+    background-color: black;
+    height: 4px;
+}
+
+.squareslider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    margin-top: -5.5px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: black;
+    border-radius: 50%;
+    background-color: darkgray;
+}
+
+/* MAINCONTAINER END */
